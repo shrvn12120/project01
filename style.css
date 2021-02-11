@@ -1,0 +1,3045 @@
+/* commented styles are for mobile sizes */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 300vh;
+  overflow: hidden;
+  
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #13017e;
+  /* change if the mask should have another color then white */
+  z-index: 10000;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url("https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/master/svg-loaders/tail-spin.svg");
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/* For all the heddings */
+.home h1 {
+  font-family: "Roboto";
+  position: absolute;
+  align-items: center;
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -118%);
+  color: #fff;
+  letter-spacing: 1.3rem;
+  line-height: 5rem;
+  font-size: 3.5rem;
+  transition: all 0.5s ease-in;
+}
+.home p {
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: rgb(0, 18, 97);
+  transform: translate(-50%, 29%);
+  transition: all 0.5s ease-in;
+  font-weight: 300;
+}
+
+.section-h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #030a68;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.section-h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #030a689d;
+}
+
+.section-h5 {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-h4 {
+  color: #ffffff42;
+  font-size: 14px;
+
+}
+
+.section-p {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+
+/* navbar */
+
+
+
+.logo-white {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+.logo-white:hover {
+  width: 81px;
+  padding: 0;
+  margin: 0;
+  transition: all 1s ease;
+}
+.my-nav{
+  background-color: transparent !important;
+  padding-top: 0 !important;
+}
+.navbar-nav{
+  margin: 0 15px 0 auto;
+}
+.nav-link{
+  color: #fff !important;
+  margin: 0 10px;
+ 
+}
+.nav-link:hover{
+  color: rgb(10, 0, 137) !important;  
+  transition: all 1s ease;
+  
+}
+.active{ 
+  border: 2px solid #fff;
+  color: rgb(0, 17, 116);
+  border-radius: 20px;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+
+}
+/* BIO */
+.bio{
+  margin: 20px;
+  padding: 20px;
+}
+/* Gallary page */
+.gallary {
+  padding-top: 13px;
+  margin-top: 20px;
+  height: 100vh;
+  position: relative;
+  bottom: 20px;
+}
+
+.slide-container {
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+
+.img-radius {
+  width: 380px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+  /* packages */
+  .packages{
+    position: relative;
+    bottom: 60px;
+  }
+  .myCard {
+   
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .my-btn {
+    background-color: #0c004d83;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .card{
+    margin: 20px auto !important;
+    padding-bottom: 15px;
+    background-color: rgba(235, 235, 235, 0.247);
+    border: none;
+  }
+  .packages-note{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+
+  /* Contact page */
+
+  .contact{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+ .form{
+    padding: 60px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+   
+  }
+
+  .form-input{
+    margin: 10px 0;
+    padding: 10px 15px;
+  }
+  .contact-btn{
+    margin-top: 10px;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+
+  /* booking page */
+  .book-now{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .book-now .card-title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1rem;
+  }
+  .form-body{
+    padding: 30px;
+  }
+  .form-body input{
+    margin: 20px 0;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+  .my-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Reach us page */
+
+  .reach-us {
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 350px;
+  }
+.transfer-info{
+  padding: 0 20px;
+}
+
+  .flight-booking {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    width: 100%;
+
+  }
+
+  .flight-links {
+    margin-top: 20px;
+  }
+
+  .airline-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .airline-logo {
+
+    width: 70px;
+    display: block;
+  }
+
+  .india {
+    width: 63px;
+  }
+  /* footer page */
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    background-color: #030a6880;
+    color: #ffffff;
+    position: relative;
+    bottom: 60px;
+    z-index: 5;
+   
+  }
+  .footer .section-h5{
+    font-size: .5rem;
+    color: rgb(180, 180, 180);
+  }
+  .social-links{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links i{
+    color: #fff;
+    font-size: 12px;
+  }
+  .info{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  @media screen and (min-width: 813px){ 
+    /* For all the heddings */
+   
+/* For all the heddings */
+.home h1 {
+  font-family: "Roboto";
+  position: absolute;
+  align-items: center;
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -118%);
+  color: #fff;
+  letter-spacing: 1.3rem;
+  line-height: 5rem;
+  font-size: 3.5rem;
+  transition: all 0.5s ease-in;
+}
+.home p {
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: rgb(0, 18, 97);
+  transform: translate(-50%, 29%);
+  transition: all 0.5s ease-in;
+  font-weight: 300;
+}
+
+.section-h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #030a68;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.section-h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #030a689d;
+}
+
+.section-h5 {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-h4 {
+  color: #ffffff42;
+  font-size: 14px;
+
+}
+
+.section-p {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+
+/* navbar */
+
+
+
+.logo-white {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+.logo-white:hover {
+  width: 81px;
+  padding: 0;
+  margin: 0;
+  transition: all 1s ease;
+}
+.my-nav{
+  background-color: transparent !important;
+  padding-top: 0 !important;
+}
+.navbar-nav{
+  margin: 0 15px 0 auto;
+}
+.nav-link{
+  color: #fff !important;
+  margin: 0 10px;
+ 
+}
+.nav-link:hover{
+  color: rgb(10, 0, 137) !important;  
+  transition: all 1s ease;
+  
+}
+.active{ 
+  border: 2px solid #fff;
+  color: rgb(0, 17, 116);
+  border-radius: 20px;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+
+}
+/* BIO */
+.bio{
+  margin: 20px;
+  padding: 20px;
+}
+/* Gallary page */
+.gallary {
+  padding-top: 13px;
+  margin-top: 20px;
+  height: 100vh;
+  position: relative;
+  bottom: 20px;
+}
+
+.slide-container {
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+
+.img-radius {
+  width: 380px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+  /* packages */
+  .packages{
+    position: relative;
+    bottom: 60px;
+  }
+  .myCard {
+   
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .my-btn {
+    background-color: #0c004d83;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .card{
+    margin: 20px auto !important;
+    padding-bottom: 15px;
+    background-color: rgba(235, 235, 235, 0.247);
+    border: none;
+  }
+  .packages-note{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+
+  /* Contact page */
+
+  .contact{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+ .form{
+    padding: 60px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+   
+  }
+
+  .form-input{
+    margin: 10px 0;
+    padding: 10px 15px;
+  }
+  .contact-btn{
+    margin-top: 10px;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+
+  /* booking page */
+  .book-now{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .book-now .card-title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1rem;
+  }
+  .form-body{
+    padding: 30px;
+  }
+  .form-body input{
+    margin: 20px 0;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+  .my-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Reach us page */
+
+  .reach-us {
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 350px;
+  }
+.transfer-info{
+  padding: 0 20px;
+}
+
+  .flight-booking {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    width: 100%;
+
+  }
+
+  .flight-links {
+    margin-top: 20px;
+  }
+
+  .airline-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .airline-logo {
+
+    width: 70px;
+    display: block;
+  }
+
+  .india {
+    width: 63px;
+  }
+  /* footer page */
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    background-color: #030a6880;
+    color: #ffffff;
+    position: relative;
+    bottom: 60px;
+    z-index: 5;
+   
+  }
+  .footer .section-h5{
+    font-size: .5rem;
+    color: rgb(180, 180, 180);
+  }
+  .social-links{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links i{
+    color: #fff;
+    font-size: 12px;
+  }
+  .info{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  }
+  @media screen and (max-width: 812px){ 
+    /* For all the heddings */
+    .home h1 {
+      font-family: "Roboto";
+      position: absolute;
+      align-items: center;
+      width: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -118%);
+      color: #fff;
+      letter-spacing: .7rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      transition: all 0.5s ease-in;
+      }
+.home p {
+      user-select: none;
+      font-family: "Roboto";
+      text-align: center;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      width: 420px;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-size: .9rem;
+      letter-spacing: 1px;
+      color: rgb(0, 18, 97);
+      transform: translate(-50%, 29%);
+      transition: all 0.5s ease-in;
+      font-weight: 400;
+      padding: 0 15px;
+      }
+  
+  .section-h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    color: #030a68;
+    letter-spacing: 0.3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .section-h2 {
+    text-align: center;
+    font-size: 1rem;
+    color: #030a689d;
+  }
+  
+  .section-h5 {
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .section-h4 {
+    color: #ffffff42;
+    font-size: 14px;
+  
+  }
+  
+  .section-p {
+    user-select: none;
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px;
+  }
+  .card-title{
+    color: rgba(1, 0, 87, 0.534) !important;
+  }
+  .card-text {
+    color: rgba(56, 56, 56, 0.692) !important;
+    margin: 10px 0 20px 0; 
+    padding: 0 17px;
+  }
+  
+  .packages-note {
+    user-select: none;
+    border: none;
+    padding: 25px 20px;
+    margin: 20px;
+    text-align: left;
+    background-color: #00043b17;
+  }
+  
+  .packages-note p {
+    user-select: none;
+    color: #001a63;
+    font-size: 12px;
+  }
+  
+  /* navbar */
+  
+  
+  
+  .logo-white {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    
+  }
+  
+  .navbar-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in ;
+    
+  }
+  .nav-link{
+    color: #fff !important;
+    width: 100px;
+    text-align: center;
+    transition: all .3s ease-out ;
+    
+   
+   
+  }
+  .my-toggle-btn{
+    color: #fff !important;
+    border: none !important;
+    font-size: 25px;
+    z-index: 1;
+    transition: all .3s ease-in ;
+  }
+  .fixed-top .show {
+    background-color: rgba(0, 58, 137, 0.9);
+    transition: all .3s ease-out ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  .collapsing{
+    opacity: 0;
+    transition: .3s ease-out;
+    color: transparent !important;
+  }
+  
+  /* Home */
+  
+  .home {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+  
+    .bg-img {
+      width: 1024;
+      height: 100vh;
+      position: relative;
+      right: 0px;
+      bottom: 0;
+      opacity: 0.6;
+    
+    }
+    /* gallary */
+.gallary{
+  height: 150vh;
+  width: 100% ;
+}
+  .slide-container {
+    width: 540px;
+    height: 299px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+  }
+  
+    /* packages */
+    .packages{
+      position: relative;
+    }
+    .packages .section-h1{
+      padding-top: 90px;
+    }
+    .myCard {
+     
+      text-align: center;
+      transition: all .5s ease-in;
+    }
+    .my-btn {
+      background-color: #0c004d83;
+      color: #fff;
+      margin-left: 90px;
+      margin-bottom: 20px;
+      width: 120px;
+    }
+    .card{
+      margin: 20px auto !important;
+      padding-bottom: 15px;
+      background-color: rgba(235, 235, 235, 0.247);
+      border: none;
+    }
+  
+    /* Contact page */
+  
+    .contact{
+      position: relative;
+      padding: 0;
+      bottom: 0;
+      height: 50vh;
+    }
+    .contact .section-h1{
+      padding-top: 75px;
+    }
+  
+    .form-input{
+      margin: 10px 0;
+      padding: 10px 15px;
+    }
+    .form-body{
+      padding: 0;
+    }
+    .contact-btn{
+      margin-top: 10px;
+    }
+    .form{
+      padding: 60px;
+      width: 100%;
+     
+    }
+  
+  
+  
+  
+    /* booking page */
+    .book-now{
+      position: relative;
+      padding: 100px 0 0 0;
+
+    }
+    .book-now .section-h1{
+      padding-top: 80px;                               
+    }
+    .book-now .card-title{
+      text-align: center;
+      margin: 50px 0 10px 0;
+      font-size: 1rem;
+    }
+    .form-body input{
+      margin: 20px 0;
+    }
+    .form-btn{
+      background-color: #0c004d83;
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      width: 110px;
+    }
+    .my-switch{
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+    /* Reach us page */
+  
+    .reach-us {
+      position: relative;
+      padding: 0;
+    }
+    .reach-us .section-h1{
+      padding-top: 80px;
+    }
+  
+    .map {
+      width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    }
+  
+    .flight-booking {
+      padding: 20px;
+      text-align: center;
+      margin: 30px 0 0 0;
+      width: 100%;
+  
+    }
+  
+    .flight-links {
+      margin-top: 20px;
+    }
+  
+    .airline-logo-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .airline-logo {
+  
+      width: 70px;
+      display: block;
+    }
+  
+    .india {
+      width: 63px;
+    }
+    
+  
+    /* footer page */
+  
+    .footer {
+      width: 100%;
+      height: 230px;
+      background-color: #030a6880;
+      color: #ffffff;
+      position: relative;
+      z-index: 5;
+     
+    }
+    .footer .section-h5{
+      font-size: .5rem;
+      color: rgb(180, 180, 180);
+    }
+    .social-links{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .social-links i{
+      color: #fff;
+      font-size: 12px;
+    }
+    .info{
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+  }
+  @media screen and (min-width: 768px){ 
+    /* For all the heddings */
+   
+/* For all the heddings */
+.home h1 {
+  font-family: "Roboto";
+  position: absolute;
+  align-items: center;
+  width: 745px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -118%);
+  color: #fff;
+  letter-spacing: 1.3rem;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in;
+}
+.home p {
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: rgb(0, 18, 97);
+  transform: translate(-50%, 29%);
+  transition: all 0.5s ease-in;
+  font-weight: 300;
+}
+
+.section-h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #030a68;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.section-h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #030a689d;
+}
+
+.section-h5 {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-h4 {
+  color: #ffffff42;
+  font-size: 14px;
+
+}
+
+.section-p {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+
+/* navbar */
+
+
+
+.logo-white {
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+.logo-white:hover {
+  width: 81px;
+  padding: 0;
+  margin: 0;
+  transition: all 1s ease;
+}
+.my-nav{
+  background-color: transparent !important;
+  padding-top: 0 !important;
+}
+.navbar-nav{
+  margin: 0 15px 0 auto;
+}
+.nav-link{
+  color: #fff !important;
+  margin: 0 10px;
+ 
+}
+.nav-link:hover{
+  color: rgb(10, 0, 137) !important;  
+  transition: all 1s ease;
+  
+}
+.active{ 
+  border: 2px solid #fff;
+  color: rgb(0, 17, 116);
+  border-radius: 20px;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+
+}
+/* BIO */
+.bio{
+  margin: 20px;
+  padding: 20px;
+}
+/* Gallary page */
+.gallary {
+  padding-top: 13px;
+  margin-top: 20px;
+  height: 100vh;
+  position: relative;
+  bottom: 20px;
+}
+
+.slide-container {
+  width: 745px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+}
+
+.img-radius {
+  width: 380px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+  /* packages */
+  .packages{
+    position: relative;
+    bottom: 60px;
+  }
+  .myCard {
+   
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .my-btn {
+    background-color: #0c004d83;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .card{
+    margin: 20px auto !important;
+    padding-bottom: 15px;
+    background-color: rgba(235, 235, 235, 0.247);
+    border: none;
+  }
+  .packages-note{
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+
+  /* Contact page */
+
+  .contact{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+ .form{
+    padding: 60px;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+   
+  }
+
+  .form-input{
+    margin: 10px 0;
+    padding: 10px 15px;
+  }
+  .contact-btn{
+    margin-top: 10px;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+
+  /* booking page */
+  .book-now{
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .book-now .card-title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1rem;
+  }
+  .form-body{
+    padding: 30px;
+  }
+  .form-body input{
+    margin: 20px 0;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+  .my-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Reach us page */
+
+  .reach-us {
+    position: relative;
+    bottom: 60px;
+    padding: 60px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 350px;
+  }
+.transfer-info{
+  padding: 0 20px;
+}
+
+  .flight-booking {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    width: 100%;
+
+  }
+
+  .flight-links {
+    margin-top: 20px;
+  }
+
+  .airline-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .airline-logo {
+
+    width: 70px;
+    display: block;
+  }
+
+  .india {
+    width: 63px;
+  }
+  /* footer page */
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    background-color: #030a6880;
+    color: #ffffff;
+    position: relative;
+    bottom: 60px;
+    z-index: 5;
+   
+  }
+  .footer .section-h5{
+    font-size: .5rem;
+    color: rgb(180, 180, 180);
+  }
+  .social-links{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links i{
+    color: #fff;
+    font-size: 12px;
+  }
+  .info{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  }
+  /* for devicese 414px landscape orientation */
+  @media screen and (max-width: 736px){
+.home h1 {
+      font-family: "Roboto";
+      position: absolute;
+      align-items: center;
+      width: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -118%);
+      color: #fff;
+      letter-spacing: .7rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      transition: all 0.5s ease-in;
+      }
+.home p {
+      user-select: none;
+      font-family: "Roboto";
+      text-align: center;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      width: 420px;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-size: .9rem;
+      letter-spacing: 1px;
+      color: rgb(0, 18, 97);
+      transform: translate(-50%, 29%);
+      transition: all 0.5s ease-in;
+      font-weight: 400;
+      padding: 0 15px;
+      }
+     /* gallary */
+.gallary{
+  height: 150vh;
+  width: 100% ;
+}
+  .slide-container {
+    width: 540px;
+    height: 299px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+  }
+  /* Contact us page */
+.contact{
+height: 100vh;
+position: relative;
+bottom: 100px;
+margin-bottom: 100px;
+}
+/* reach us */
+.map{
+  width: 540px;
+  left: 50%;
+}
+  
+  }
+    /* for devicese 375px landscape orientation */
+    @media screen and (max-width: 667px){
+      /* For all the heddings */
+.home h1 {
+        font-family: "Roboto";
+        position: absolute;
+        align-items: center;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -118%);
+        color: #fff;
+        letter-spacing: .7rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        transition: all 0.5s ease-in;
+        }
+.home p {
+        user-select: none;
+        font-family: "Roboto";
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 420px;
+        line-height: 2rem;
+        text-transform: uppercase;
+        font-size: .9rem;
+        letter-spacing: 1px;
+        color: rgb(0, 18, 97);
+        transform: translate(-50%, 29%);
+        transition: all 0.5s ease-in;
+        font-weight: 400;
+        padding: 0 15px;
+        }
+        
+  /* gallary */
+.gallary{
+  height: 150vh;
+  width: 100% ;
+}
+  .slide-container {
+    width: 540px;
+    height: 299px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+  }
+  /* Contact us page */
+.contact{
+height: 100vh;
+position: relative;
+bottom: 100px;
+margin-bottom: 100px;
+}
+/* reach us */
+.map{
+  width: 540px;
+  left: 50%;
+}
+}
+  /* for devicese 360px landscape orientation */
+  @media screen and (max-width: 640px){
+        /* For all the heddings */
+.home h1 {
+          font-family: "Roboto";
+          position: absolute;
+          align-items: center;
+          width: 500px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -118%);
+          color: #fff;
+          letter-spacing: .7rem;
+          line-height: 2rem;
+          font-size: 1.5rem;
+          transition: all 0.5s ease-in;
+          }
+ .home p {
+          user-select: none;
+          font-family: "Roboto";
+          text-align: center;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          width: 420px;
+          line-height: 2rem;
+          text-transform: uppercase;
+          font-size: .9rem;
+          letter-spacing: 1px;
+          color: rgb(0, 18, 97);
+          transform: translate(-50%, 29%);
+          transition: all 0.5s ease-in;
+          font-weight: 400;
+          padding: 0 15px;
+          }
+          
+    /* gallary */
+  .gallary{
+    height: 150vh;
+    width: 100% ;
+  }
+    .slide-container {
+      width: 470px;
+      height: 299px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding-bottom: 10px;
+    }
+    /* Contact us page */
+.contact{
+  height: 100vh;
+  position: relative;
+  bottom: 100px;
+  margin-bottom: 100px;
+  }
+  }
+    /* for devicese 320px landscape orientation */
+    @media screen and (max-width: 568px){
+      /* For all the heddings */
+  .home h1 {
+  font-family: "Roboto";
+  position: absolute;
+  align-items: center;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -118%);
+  color: #fff;
+  letter-spacing: .7rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in;
+  }
+  .home p {
+  user-select: none;
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 420px;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  color: rgb(0, 18, 97);
+  transform: translate(-50%, 29%);
+  transition: all 0.5s ease-in;
+  font-weight: 400;
+  padding: 0 15px;
+  }
+  
+  /* navigation */
+  .nav-item:first-child{
+  margin-top: 48px;
+  }
+      /* gallary */
+  .gallary{
+    position: relative;
+    height: 150vh;
+    bottom: 65px;
+  }
+  
+  .slide-container {
+  width: 470px;
+  height: 250px;
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  }
+  /* Contact us page */
+  .contact{
+  height: 100vh;
+  position: relative;
+  bottom: 100px;
+  margin-bottom: 100px;
+  }
+  
+  }
+
+  
+  @media screen and (max-width: 414px){
+    /* For all the heddings */
+    .home h1 {
+      font-family: "Roboto";
+      position: absolute;
+      align-items: center;
+      width: 390px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -118%);
+      color: #fff;
+      letter-spacing: .7rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      transition: all 0.5s ease-in;
+  }
+  .home p {
+      user-select: none;
+      font-family: "Roboto";
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 320px;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-size: .9rem;
+      letter-spacing: 1px;
+      color: rgb(0, 18, 97);
+      transform: translate(-50%, 29%);
+      transition: all 0.5s ease-in;
+      font-weight: 400;
+      padding: 0 15px;
+  }
+  .section-h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    color: #030a68;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .section-h2 {
+    text-align: center;
+    font-size: 1rem;
+    color: #030a689d;
+  }
+  
+  .section-h5 {
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .section-h4 {
+    color: #ffffff42;
+    font-size: 14px;
+  
+  }
+  
+  .section-p {
+    user-select: none;
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px;
+  }
+  .card-title{
+    color: rgba(1, 0, 87, 0.534) !important;
+  }
+  .card-text {
+    color: rgba(56, 56, 56, 0.692) !important;
+    margin: 10px 0 20px 0; 
+    padding: 0 17px;
+  }
+  
+  .packages-note {
+    user-select: none;
+    border: none;
+    padding: 25px 20px;
+    margin: 20px;
+    text-align: left;
+    background-color: #00043b17;
+  }
+  
+  .packages-note p {
+    user-select: none;
+    color: #001a63;
+    font-size: 12px;
+  }
+  
+  /* navbar */
+  
+  
+  
+  .logo-white {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    
+  }
+  
+  .navbar-nav{
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in ;
+    
+  }
+  .nav-link{
+    color: #fff !important;
+    width: 100px;
+    text-align: center;
+    transition: all .3s ease-out ;
+    font-size: 1rem;
+    
+   
+   
+  }
+  .my-toggle-btn{
+    color: #fff !important;
+    border: none !important;
+    font-size: 25px;
+    z-index: 1;
+    transition: all .3s ease-in ;
+  }
+  .fixed-top .show {
+    background-color: rgba(0, 58, 137, 0.9);
+    transition: all .3s ease-out ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  .collapsing{
+    opacity: 0;
+    transition: .3s ease-out;
+    color: transparent !important;
+  }
+  
+  /* Home */
+  
+  .home {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+  
+    .bg-img {
+      width: 1024;
+      height: 100vh;
+      position: relative;
+      right: 0px;
+      bottom: 0;
+      opacity: 0.6;
+    
+    }
+    /* gallary */
+    .gallary {
+      position: relative;
+      height: 60vh;
+    }
+    .slide-container {
+      width: 282px;
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .img-radius {
+      width: 380px;
+      height: 250px;
+      border-radius: 5px;
+    }
+  
+    /* packages */
+    .packages{
+      position: relative;
+    }
+    .packages .section-h1{
+      padding-top: 90px;
+    }
+    .myCard {
+     
+      text-align: center;
+      transition: all .5s ease-in;
+    }
+    .my-btn {
+      background-color: #0c004d83;
+      color: #fff;
+      margin-left: 90px;
+      margin-bottom: 20px;
+      width: 120px;
+    }
+    .card{
+      margin: 20px auto !important;
+      padding-bottom: 15px;
+      background-color: rgba(235, 235, 235, 0.247);
+      border: none;
+    }
+  
+    /* Contact page */
+  
+    .contact{
+      position: relative;
+      padding: 0;
+      bottom: 0;
+      height: 70vh;
+    }
+    .contact .section-h1{
+      padding-top: 75px;
+    }
+  
+    .form-input{
+      margin: 10px 0;
+      padding: 10px 15px;
+    }
+    .form-body{
+      padding: 0;
+    }
+    .contact-btn{
+      margin-top: 10px;
+    }
+    .form{
+      padding: 60px;
+      border-radius: 5px;
+      width: 100%;
+    }
+  
+  
+  
+  
+    /* booking page */
+    .book-now{
+      position: relative;
+      padding: 100px 0 0 0;
+
+    }
+    .book-now .section-h1{
+      padding-top: 0px; 
+      margin-top: 10px;                              
+    }
+    .book-now .card-title{
+      text-align: center;
+      margin: 50px 0 10px 0;
+      font-size: 1rem;
+    }
+    .form-body input{
+      margin: 20px 0;
+    }
+    .form-btn{
+      background-color: #0c004d83;
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      width: 110px;
+    }
+    .my-switch{
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+    /* Reach us page */
+  
+    .reach-us {
+      position: relative;
+      padding: 0;
+    }
+    .reach-us .section-h1{
+      padding-top: 80px;
+    }
+  
+    .map {
+      width: 350px;
+      position: relative;
+      left: 19px;
+      transform: translate(0, 0);
+    }
+  
+    .flight-booking {
+      padding: 20px;
+      text-align: center;
+      margin: 30px 0 0 0;
+      width: 100%;
+  
+    }
+  
+    .flight-links {
+      margin-top: 20px;
+    }
+  
+    .airline-logo-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .airline-logo {
+  
+      width: 150px;
+      display: block;
+    }
+  
+    .india {
+      width: 100px;
+    }
+    
+  
+    /* footer page */
+  
+    .footer {
+      width: 100%;
+      height: 230px;
+      background-color: #030a6880;
+      color: #ffffff;
+      position: relative;
+      z-index: 5;
+     
+    }
+    .footer .section-h5{
+      font-size: .7rem;
+      color: rgb(180, 180, 180);
+    }
+    .social-links{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .social-links i{
+      color: #fff;
+      font-size: 12px;
+    }
+    .info{
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+  }
+  @media screen and (max-width: 375px){
+    /* For all the heddings */
+    .home h1 {
+      font-family: "Roboto";
+      position: absolute;
+      align-items: center;
+      width: 320px;
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%, -118%);
+      color: #fff;
+      letter-spacing: .7rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      transition: all 0.5s ease-in;
+  }
+  .home p {
+      user-select: none;
+      font-family: "Roboto";
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 320px;
+      line-height: 2rem;
+      text-transform: uppercase;
+      font-size: .9rem;
+      letter-spacing: 1px;
+      color: rgb(0, 18, 97);
+      transform: translate(-50%, 29%);
+      transition: all 0.5s ease-in;
+      font-weight: 400;
+      padding: 0 15px;
+  }
+  
+  .section-h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    color: #030a68;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .section-h2 {
+    text-align: center;
+    font-size: 1rem;
+    color: #030a689d;
+  }
+  
+  .section-h5 {
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .section-h4 {
+    color: #ffffff42;
+    font-size: 14px;
+  
+  }
+  
+  .section-p {
+    user-select: none;
+    color: rgba(0, 13, 71, 0.664);
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px;
+  }
+  .card-title{
+    color: rgba(1, 0, 87, 0.534) !important;
+  }
+  .card-text {
+    color: rgba(56, 56, 56, 0.692) !important;
+    margin: 10px 0 20px 0; 
+    padding: 0 17px;
+  }
+  
+  .packages-note {
+    user-select: none;
+    border: none;
+    padding: 25px 20px;
+    margin: 20px;
+    text-align: left;
+    background-color: #00043b17;
+  }
+  
+  .packages-note p {
+    user-select: none;
+    color: #001a63;
+    font-size: 12px;
+  }
+  
+  /* navbar */
+  
+  
+  
+  .logo-white {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    
+  }
+  
+  .navbar-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in ;
+    
+  }
+  .nav-link{
+    color: #fff !important;
+    width: 100px;
+    text-align: center;
+    transition: all .3s ease-out ;
+    
+   
+   
+  }
+  .my-toggle-btn{
+    color: #fff !important;
+    border: none !important;
+    font-size: 25px;
+    z-index: 1;
+    transition: all .3s ease-in ;
+  }
+  .fixed-top .show {
+    background-color: rgba(0, 58, 137, 0.9);
+    transition: all .3s ease-out ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  .collapsing{
+    opacity: 0;
+    transition: .3s ease-out;
+    color: transparent !important;
+  }
+  
+  /* Home */
+  
+  .home {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+  
+    .bg-img {
+      width: 1024;
+      height: 100vh;
+      position: relative;
+      right: 0px;
+      bottom: 0;
+      opacity: 0.6;
+    
+    }
+    /* gallary */
+    .gallary {
+      position: relative;
+      height: 50vh;
+    }
+    .slide-container {
+      width: 320px;
+      height: 250px;
+      position: absolute;
+      left: 50%;
+      top: 85%;
+      transform: translate(-50%, -50%);
+    }
+  
+    /* packages */
+    .packages{
+      position: relative;
+    }
+    .packages .section-h1{
+      padding-top: 90px;
+    }
+    .myCard {
+     
+      text-align: center;
+      transition: all .5s ease-in;
+    }
+    .my-btn {
+      background-color: #0c004d83;
+      color: #fff;
+      margin-left: 90px;
+      margin-bottom: 20px;
+      width: 120px;
+    }
+    .card{
+      margin: 20px auto !important;
+      padding-bottom: 15px;
+      background-color: rgba(235, 235, 235, 0.247);
+      border: none;
+    }
+  
+    /* Contact page */
+  
+    .contact{
+      position: relative;
+      padding: 0;
+      bottom: 0;
+      height: 65vh;
+    }
+    .contact .section-h1{
+      padding-top: 75px;
+    }
+  
+    .form-input{
+      margin: 10px 0;
+      padding: 10px 15px;
+    }
+    .form-body{
+      padding: 0;
+    }
+    .contact-btn{
+      margin-top: 10px;
+    }
+    .form{
+      padding: 60px;
+      border-radius: 5px;
+      width: 100%;
+    }
+  
+  
+  
+    /* booking page */
+    .book-now{
+      position: relative;
+      padding: 50px 0;
+      
+    }
+    .book-now .section-h1{
+      padding-top: 80px;                               
+    }
+    .book-now .card-title{
+      text-align: center;
+      margin: 50px 0 10px 0;
+      font-size: 1rem;
+    }
+    .form-body input{
+      margin: 20px 0;
+    }
+    .form-btn{
+      background-color: #0c004d83;
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 50%;
+      transform: translate(-50%);
+      width: 110px;
+    }
+    .my-switch{
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+    /* Reach us page */
+  
+    .reach-us {
+      position: relative;
+      padding: 0;
+    }
+    .reach-us .section-h1{
+      padding-top: 80px;
+    }
+  
+    .map {
+      width: 350px;
+      position: relative;
+      right: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+  
+    .flight-booking {
+      padding: 20px;
+      text-align: center;
+      margin: 30px 0 0 0;
+      width: 100%;
+  
+    }
+  
+    .flight-links {
+      margin-top: 20px;
+    }
+  
+    .airline-logo-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .airline-logo {
+  
+      width: 70px;
+      display: block;
+    }
+  
+    .india {
+      width: 63px;
+    }
+    
+  
+    /* footer page */
+  
+    .footer {
+      width: 100%;
+      height: 230px;
+      background-color: #030a6880;
+      color: #ffffff;
+      position: relative;
+      z-index: 5;
+     
+    }
+    .footer .section-h5{
+      font-size: .5rem;
+      color: rgb(180, 180, 180);
+    }
+    .social-links{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .social-links i{
+      color: #fff;
+      font-size: 12px;
+    }
+    .info{
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+  }
+ @media screen and (max-width: 360px){
+  /* For all the heddings */
+.home h1 {
+    font-family: "Roboto";
+    position: absolute;
+    align-items: center;
+    width: 320px;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -118%);
+    color: #fff;
+    letter-spacing: .7rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in;
+}
+.home p {
+    user-select: none;
+    font-family: "Roboto";
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: rgb(0, 18, 97);
+    transform: translate(-50%, 29%);
+    transition: all 0.5s ease-in;
+    font-weight: 400;
+    padding: 0 15px;
+}
+
+.section-h1 {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  color: #030a68;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.section-h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #030a689d;
+}
+
+.section-h5 {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-h4 {
+  color: #ffffff42;
+  font-size: 14px;
+
+}
+
+.section-p {
+  user-select: none;
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+.card-title{
+  color: rgba(1, 0, 87, 0.534) !important;
+}
+.card-text {
+  color: rgba(56, 56, 56, 0.692) !important;
+  margin: 10px 0 20px 0; 
+  padding: 0 17px;
+}
+
+.packages-note {
+  user-select: none;
+  border: none;
+  padding: 25px 20px;
+  margin: 20px;
+  text-align: left;
+  background-color: #00043b17;
+}
+
+.packages-note p {
+  user-select: none;
+  color: #001a63;
+  font-size: 12px;
+}
+
+/* navbar */
+
+
+
+.logo-white {
+  width: 60px;
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+  
+}
+
+.navbar-nav{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease-in ;
+  
+}
+.nav-link{
+  color: #fff !important;
+  width: 100px;
+  text-align: center;
+  transition: all .3s ease-out ;
+  
+ 
+ 
+}
+.my-toggle-btn{
+  color: #fff !important;
+  border: none !important;
+  font-size: 25px;
+  z-index: 1;
+  transition: all .3s ease-in ;
+}
+.fixed-top .show {
+  background-color: rgba(0, 58, 137, 0.9);
+  transition: all .3s ease-out ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+.collapsing{
+  opacity: 0;
+} 
+
+/* Home */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+  .bg-img {
+    width: 1024;
+    height: 100vh;
+    position: relative;
+    right: 0px;
+    bottom: 0;
+    opacity: 0.6;
+  
+  }
+  /* gallary */
+  .gallary {
+    height: 80vh;
+    position: relative;
+    bottom: 65px;
+
+  }
+  .slide-container {
+    max-width: 320px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* packages */
+  .packages{
+    position: relative;
+  }
+  .packages .section-h1{
+    padding-top: 90px;
+  }
+  .myCard {
+   
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .my-btn {
+    background-color: #0c004d83;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .card{
+    margin: 20px auto !important;
+    padding-bottom: 15px;
+    background-color: rgba(235, 235, 235, 0.247);
+    border: none;
+  }
+
+  /* Contact page */
+
+  .contact{
+    position: relative;
+    padding: 0;
+    bottom: 0;
+    height: 100vh;
+  }
+  .contact .section-h1{
+    padding-top: 75px;
+  }
+
+  .form-input{
+    margin: 10px 0;
+    padding: 10px 15px;
+  }
+  .form-body{
+    padding: 0;
+  }
+  .contact-btn{
+    margin-top: 10px;
+  }
+  .form{
+    padding: 60px;
+    border-radius: 5px;
+    width: 100%;
+   
+  }
+
+
+
+
+  /* booking page */
+  .book-now{
+    position: relative;
+    padding: 0;
+  }
+  .book-now .section-h1{
+    padding: 0;
+  }
+  .book-now .card-title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1rem;
+  }
+  .form-body input{
+    margin: 20px 0;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+  }
+  .my-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Reach us page */
+
+  .reach-us {
+    position: relative;
+    padding: 0;
+  }
+  .reach-us .section-h1{
+    padding-top: 80px;
+  }
+
+  .map {
+    width: 340px;
+    position: relative;
+    right: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .flight-booking {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    width: 100%;
+
+  }
+
+  .flight-links {
+    margin-top: 20px;
+  }
+
+  .airline-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .airline-logo {
+
+    width: 70px;
+    display: block;
+  }
+
+  .india {
+    width: 63px;
+  }
+  
+
+  /* footer page */
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    background-color: #030a6880;
+    color: #ffffff;
+    position: relative;
+    z-index: 5;
+   
+  }
+  .footer .section-h5{
+    font-size: .5rem;
+    color: rgb(180, 180, 180);
+  }
+  .social-links{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links i{
+    color: #fff;
+    font-size: 12px;
+  }
+  .info{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  }
+/* fahun fonuvi food etheege update nulaa ehkon nimifa */
+@media screen and (max-width: 320px){
+  /* For all the heddings */
+.home h1 {
+  font-family: "Roboto";
+  position: absolute;
+  align-items: center;
+  width: 320px;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -118%);
+  color: #fff;
+  letter-spacing: .7rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in;
+}
+.home p {
+  user-select: none;
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  color: rgb(0, 18, 97);
+  transform: translate(-50%, 29%);
+  transition: all 0.5s ease-in;
+  font-weight: 400;
+  padding: 0 15px;
+}
+
+.section-h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 61px;
+  color: #030a68;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.section-h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #030a689d;
+}
+
+.section-h5 {
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-h4 {
+  color: #ffffff42;
+  font-size: 14px;
+
+}
+
+.section-p {
+  user-select: none;
+  color: rgba(0, 13, 71, 0.664);
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px;
+}
+.card-title{
+  color: rgba(1, 0, 87, 0.534) !important;
+}
+.card-text {
+  color: rgba(56, 56, 56, 0.692) !important;
+  margin: 10px 0 20px 0; 
+  padding: 0 17px;
+}
+
+.packages-note {
+  user-select: none;
+  border: none;
+  padding: 25px 20px;
+  margin: 20px;
+  text-align: left;
+  background-color: #00043b17;
+}
+
+.packages-note p {
+  user-select: none;
+  color: #001a63;
+  font-size: 12px;
+}
+
+/* navbar */
+
+
+
+.logo-white {
+  width: 60px;
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+  
+}
+
+.navbar-nav{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease-in ;
+  
+}
+.nav-link{
+  color: #fff !important;
+  width: 100px;
+  text-align: center;
+  transition: all .3s ease-out ;
+  
+ 
+ 
+}
+.my-toggle-btn{
+  color: #fff !important;
+  border: none !important;
+  font-size: 25px;
+  z-index: 1;
+  transition: all .3s ease-in ;
+}
+.fixed-top .show {
+  background-color: rgba(0, 58, 137, 0.9);
+  transition: all .3s ease-out ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+.collapsing{
+  opacity: 0;
+  transition: .3s ease-out;
+  color: transparent !important;
+}
+
+/* Home */
+
+.home {
+  height: 100vh;
+}
+
+  .bg-img {
+    width: 1024;
+    height: 100vh;
+    position: relative;
+    right: 0px;
+    bottom: 0;
+    opacity: 0.6;
+  
+  }
+  /* gallary */
+  .gallary{
+    position: relative;
+    height: 79vh;
+    bottom: 65px;
+    
+}
+  
+  
+  .slide-container {
+    width: 282px;
+    height: 250px;
+    position: relative;
+    left: 50%; 
+    top: 40%;
+     transform: translate(-50%, -50%);
+  }
+
+  /* packages */
+  .packages .section-h1{
+    padding-top: 73px;
+  }
+  .myCard {
+
+    text-align: center;
+    transition: all .5s ease-in;
+  }
+  .my-btn {
+    background-color: #0c004d83;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  .card{
+    margin: 20px 4px !important;
+    padding-bottom: 15px;
+    background-color: rgba(235, 235, 235, 0.247);
+    border: none;
+  }
+
+  /* Contact page */
+
+  .contact .section-h1{
+   margin-top: 16px;
+  }
+  .form{
+    padding: 40px;
+    border-radius: 5px;
+    width: 100%;
+   
+  }
+  .form-body{
+    padding: 0 20px; 
+  }
+
+  .form-input{
+    margin: 10px 0;
+    padding: 10px 15px;
+  }
+  .contact-btn{
+    margin-top: 10px;
+  }
+
+  /* booking page */
+  .book-now{
+    position: relative;
+    top: 50px;
+
+  }
+  .book-now .section-h1{
+    margin-top: 16px;
+  }
+  .book-now .card-title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 1rem;
+  }
+
+  .form-body input{
+    margin: 20px 0;
+  }
+  .form-btn{
+    background-color: #0c004d83;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+  }
+  .my-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* Reach us page */
+
+  .reach-us .section-h1{
+    margin-top: 16px;
+  }
+
+  .map {
+   
+    width: 300px;
+    
+    
+  }
+  .reach-us {
+    position: relative;
+    bottom: 60px;
+    padding: 60px 0;
+  }
+
+  .flight-booking {
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    width: 100%;
+
+  }
+
+  .flight-links {
+    margin-top: 20px;
+  }
+
+  .airline-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .airline-logo {
+
+    width: 70px;
+    display: block;
+  }
+
+  .india {
+    width: 63px;
+  }
+  
+
+  /* footer page */
+
+  .footer {
+    width: 100%;
+    height: 230px;
+    background-color: #030a6880;
+    color: #ffffff;
+    position: relative;
+    bottom: 85px;
+    z-index: 5;
+   
+  }
+  .footer .section-h5{
+    font-size: .5rem;
+    color: rgb(180, 180, 180);
+  }
+  .social-links{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .social-links i{
+    color: #fff;
+    font-size: 12px;
+  }
+  .info{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  } 
