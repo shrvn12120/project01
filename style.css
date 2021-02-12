@@ -26,7 +26,11 @@ body{
   z-index: 10000;
   /* makes sure it stays on top */
 }
-
+.loading{
+color:#fff;
+Position: absolute;
+margin: 0 auto;
+}
 #status {
   width: 200px;
   height: 200px;
