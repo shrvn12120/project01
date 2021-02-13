@@ -14,6 +14,16 @@ body{
 }
 
 /* Preloader */
+@keyframes blinking{
+  from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+@-webkit-keyframes blinking {
+   from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
 
 #preloader {
   position: fixed;
@@ -21,26 +31,34 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #13017e;
-  /* change if the mask should have another color then white */
+  background: linear-gradient(360deg, rgb(5, 1, 94) 0%, rgba(9,9,121,1) 47%, rgba(4,124,197,1) 88%, rgb(0, 174, 255) 100%); 
   z-index: 10000;
-  /* makes sure it stays on top */
+}
+.loading{
+  position: absolute;
+  top: 60%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+  color: #fff;
+  font-size: 0.5rem;
+  animation: blinking 900ms infinite;
+  -webkit-animation: blinking 900ms infinite;
 }
 
 #status {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   left: 50%;
-  /* centers the loading animation horizontally one the screen */
   top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url("https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/master/svg-loaders/tail-spin.svg");
-  /* path to your loading animation */
+  transform: translate(-50%, -50%);
+  background-image: url("img/logo__loading.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin: -100px 0 0 -100px;
-  /* is width and height divided by two */
+  background-size: cover;
+  animation: blinking 1000ms infinite;
+  -webkit-animation: blinking 1000ms infinite;
 }
 
 /* For all the heddings */
@@ -710,7 +728,7 @@ body{
   }
 
   }
-  @media screen and (max-width: 812px){ 
+  @media screen and (max-width: 991px){ 
     /* For all the heddings */
     .home h1 {
       font-family: "Roboto";
