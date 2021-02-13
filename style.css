@@ -45,6 +45,19 @@ body{
   animation: blinking 900ms infinite;
   -webkit-animation: blinking 900ms infinite;
 }
+.loading-img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+  color: #fff;
+  font-size: 0.5rem;
+  animation: blinking 900ms infinite;
+  -webkit-animation: blinking 900ms infinite;
+  transition-delay: 1s ease;
+}
 
 #status {
   width: 250px;
@@ -53,7 +66,7 @@ body{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("img/logo__loading.png");
+  /* background-image: url("img/logo__loading.png"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
